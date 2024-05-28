@@ -1,4 +1,6 @@
-﻿namespace TGAConverter
+﻿using System.Windows.Forms;
+
+namespace TGAConverter
 {
     partial class TGAConverter
     {
@@ -28,6 +30,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.Text = "TGA Converter";
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            
             this.buttonSelectInput = new System.Windows.Forms.Button();
             this.fileInputOutputPanel = new System.Windows.Forms.Panel();
             this.labelOutput = new System.Windows.Forms.Label();

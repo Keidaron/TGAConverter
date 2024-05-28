@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using TGAConverter.CustomForms;
 using TGAConverter.TGA;
 
 namespace TGAConverter
@@ -44,6 +42,9 @@ namespace TGAConverter
             {
                 entry.Value.Save($"{m_selectedOutputPath}\\{entry.Key.Replace(".tga", "")}.PNG");
             }
+
+            DialogResult res = MessageBox.Show($"All files exported as PNG to {m_selectedOutputPath}", "Confirmation",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

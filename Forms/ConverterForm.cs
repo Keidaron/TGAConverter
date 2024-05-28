@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Windows.Forms;
 using TGAConverter.CustomForms;
-using TGAConverter.TGA;
 
 namespace TGAConverter
 {
@@ -26,7 +24,7 @@ namespace TGAConverter
             textBoxInputPath.Enabled = false;
             textBoxOutputPath.Enabled = false;
             buttonExportLoadedTGAs.Enabled = false;
-
+            
             m_list = new ImageList();
             m_list.ImageSize = new Size(128, 128);
 
